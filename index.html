@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Computer Science Student</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 3px solid #007bff;
+}
+
+section {
+    padding: 40px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project {
+    background: #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #000;
+}
+
+.dark-mode section {
+    background: #333;
+    color: white;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SARANRAJ R</h1>
+        <p>Computer Science Student | Developer </p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="image.jpg"alt="saranraj" class="profile-img">
+        <p>Hello! I'm a Computer Science student passionate about programming and technology. I love building projects and learning new skills.</p>
+        <a href="Resume.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal portfolio website built using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="">
+            <h3></h3>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python</li>
+            <li>Web Development</li>
+            <li>Data Structures & Algorithms</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p>Email: saranraj20061007@gmail.com</p>
+        <p>instagram: <a href="https://www.instagram.com/saran2006_07?igsh=MW95azF2ZW8zcnB1ZQ==">instagram </a></p>
+        <p>GitHub: <a href="https://github.com/saranraj2006"> GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Saranraj. All rights reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    alert("Welcome to my portfolio!");
+
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    darkModeToggle.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+    });
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Message sent successfully!");
+    });
+});
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
